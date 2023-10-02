@@ -108,11 +108,43 @@
   margin-left: 0.5rem;
 }
 
+.appsContainer {
+  display: flex;
+  text-align: center; 
+  align-items: center;
+   gap: 50px;
+    width: 100%; 
+    overflow: scroll;
+    margin-top: 100px;
+
+}
+
+.banner {
+  background: black;
+  color: white;
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+@media (min-width: 600px) {
+
+
+  .appsContainer {
+    justify-content: space-around;
+  }
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
+
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -127,3 +159,5 @@
     filter: invert(1);
   }
 }
+
+
